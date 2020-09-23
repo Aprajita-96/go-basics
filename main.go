@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func main() {
+func mainfun() {
 	fmt.Println("hello world")
 	//thid is a variable
 	var a = "intial variable"
-	fmt.Println(a)
+	fmt.Print(a)
 
 	//short hand way, also a constant and cannot be changed anytime in program
 	apple := "apple"
