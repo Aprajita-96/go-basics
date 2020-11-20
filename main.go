@@ -1,6 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+func init() {
+	fmt.Print("init triggered")
+}
 
 func mainfun() {
 	fmt.Println("hello world")

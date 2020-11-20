@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func mapmain() {
+func main() {
 	m := make(map[string]int)
 	m["k1"] = 0
 	m["k2"] = 13
@@ -25,5 +25,27 @@ func mapmain() {
 
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("intialised map:", n)
+
+	states := map[string]string{
+		"KA": "Bengaluru",
+		"TN": "Chennai",
+		"TS": "Hyderabad",
+	}
+
+	fmt.Println(states)
+
+	states["OD"] = "Bhuvaneshwar"
+
+	delete(states, "TN")
+
+	//check if key exists
+	capital, ok := states["DL"]
+	fmt.Println(capital, ok)
+
+	if _, exists := states["OD"]; exists {
+		fmt.Println("OD exists")
+	} else {
+		fmt.Println("Doesnt exists")
+	}
 
 }

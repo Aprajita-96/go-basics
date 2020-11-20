@@ -1,0 +1,62 @@
+Types:
+Primitive types:
+    float,int,stirng,boolean
+    integers: int8, int16, int32,int64,unint8,16,32,64
+    float: float32,float64
+structures/composite type:
+    struct, array, slice, map, channel & interface
+
+
+
+-Accept inputs from the user: fmt.scanf
+
+-Array :numbered sequence of elements with fixed size of the same type
+var x[5] int 
+b:= [5]int {1,2,3,4,5}
+
+- Slice:wrapper around the array.
+when u say var x[5] int in an array they are already initialised with 0, also they are fixed to 5 , not more than that.
+you can slice the array. 
+- s[lo:hi] - elements between low and high-1
+-s[lo:lo]  - empty
+- s[lo:] - from low to end
+-s[:hi] - from 0 to high index
+
+
+- Map: collection of key value pairs
+
+
+- Support for higher order functions
+    Ability to treat functions like data( this will make a lang called as functional languge)
+    - assign them to variables
+    - pass them as arg to functions
+    - return them as return value from function
+
+
+Modules
+    - packages
+        - files
+
+
+crypto
+    /hash
+    /RSA256
+
+
+file1.go
+    package util
+file2.go
+    package util
+
+Create a folder '03-modularity'
+    cd to the folder
+    
+    Make sure GOPATH is set to the '03-modularity' folder
+
+    Create the following folders
+    /pkg
+    /src
+    /bin
+
+    in the 'src' folder
+        run the command 'go mod init modularity' in the terminal
